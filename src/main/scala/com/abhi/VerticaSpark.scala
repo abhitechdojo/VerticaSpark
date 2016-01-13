@@ -43,7 +43,6 @@ object VerticaSpark extends App {
   rddVROutput.saveAsNewAPIHadoopDataset(job.getConfiguration)
 
   def getVerticaRecord(name : String, value : Int , conf: Configuration) : VerticaRecord = {
-    println("++++++++++++++ CAME INSIDE +++++++++++++++++ ")
     var retVal = new VerticaRecord(conf)
     //println(s"going to build Vertica Record with ${name} and ${value}")
     retVal.set(0, new Text(name))
