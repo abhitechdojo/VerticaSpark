@@ -19,7 +19,7 @@ object VerticaSpark extends App {
   conf.set("mapred.vertica.database", "ddcanalytics")
   conf.set("mapred.vertica.port", "5433")
   conf.set("mapred.vertica.username", "vertica")
-  conf.set("mapred.vertica.hostnames", "10.12.16.153,10.12.16.154,10.12.17.252,10.37.0.65")
+  conf.set("mapred.vertica.hostnames", "10.12.16.153,10.12.16.154,10.12.16.155,10.37.0.65")
   conf.set("mapred.vertica.password", "vertica")
 
   val job = new Job(conf)
